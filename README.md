@@ -1,27 +1,35 @@
-# SuperheroeAPP
+# HeroesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+Sistema de control de datos de caracteristicas de heroes
 
-## Development server
+## Comenzando 🚀
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para ver la aplicacion solo necesitas levantar un Ng serve desde la terminal  y explorar es muy intuitiva
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Pre-requisitos 📋
 
-## Build
+Como requisitos necesitas Angular CLI y nodeJS para modificaciones necesitaras instalar solamente Typescript
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+#
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Construido con 🛠️
 
-## Running end-to-end tests
+* Angular 7
+* Node.Js
+* Typescript
+* consumo de API REST crud
+* FireBase como backend
+* boostrap/sweetalert2
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Autores ✒️
+
+Jose Torrealba
+
+
+## Licencia 📄
+
+Este proyecto es de licencia libre fue creador por propositos de practica puede hacer libre uso del mismo
