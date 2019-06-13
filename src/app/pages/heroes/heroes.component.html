@@ -1,0 +1,62 @@
+<h1>Listado de Heroes</h1>
+<hr>
+
+<div class="row">
+    <div class="col text-right">
+
+        <button routerLink="/heroe/nuevo" class="btn btn-primary">
+      <i class="fa fa-plus"></i>
+      agregar
+    </button>
+
+    </div>
+</div>
+
+<table class="table mt-5 animated fadeIn fast">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Poder</th>
+            <th scope="col">Vivo</th>
+            <th scope="col">Tools</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let heroe of heroes; let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{heroe.nombre}}</td>
+            <td>{{heroe.poder}}</td>
+            <td>
+
+                <label *ngIf="heroe.vivo" class="badge badge-success">vivo</label>
+                <label *ngIf="!heroe.vivo" class="badge badge-danger">muerto</label>
+
+            </td>
+            <td>
+
+                <button [routerLink]="['/heroe', heroe.id]" class="btn btn-info mr-1"><i class="fa fa-pen"></i></button>
+                <button (click)="borrarHeroe(heroe, i)" class="btn btn-danger mr-1"><i class="fa fa-trash"></i></button>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div *ngIf="heroes.length === 0 " class="alert alert-warning text-center mt-3">
+    <h4 class="alert-heading">
+        <p><i class="fa fa-exclamation fa-2x"></i></p>
+        <p class="mb-0">No hay registros</p>
+
+
+    </h4>
+</div>
+
+<div *ngIf="cargando" class="alert alert-info text-center mt-3">
+    <h4 class="alert-heading">
+        <p><i class="fa fa-sync fa-spin fa-2x"></i></p>
+        <p class="mb-0">Espere porfavor</p>
+
+
+    </h4>
+</div>
