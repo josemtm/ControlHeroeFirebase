@@ -16,7 +16,7 @@ Como requisitos necesitas Angular CLI y nodeJS para modificaciones necesitaras i
 
 ## Construido con 🛠️
 
-* Angular 7
+* Angular 8
 * Node.Js
 * Typescript
 * consumo de API REST crud
